@@ -1,6 +1,9 @@
 <?php
 
-$array = array('key_php'=>'PHP','iOS','Android','NodeJS');
+$array = array('PHP','iOS','Android','NodeJS');
+
+//echo $array[2];
+
 //print_r($array);
 $dem = count($array); //4
 
@@ -8,7 +11,7 @@ $dem = count($array); //4
 // 	echo $array[$i].'<br>';
 // }
 
-
+/*
 foreach($array as $key => $arr){
 	echo $key. ': '.$arr.'<br>';
 }
@@ -113,14 +116,35 @@ switch ($year%12) {
 	case 9:
 		$chi = 'Tị ';
 		break;
-	case 8:
+	case 10:
 		$chi = 'Ngọ ';
 		break;
-	case 9:
+	case 11:
 		$chi = 'Mùi ';
 		break;
 }
 echo $can.$chi;
 
+*/
+
+
+
+
+$str = "Hello World!";
+
+$arr = explode(' ', $str); //mảng
+
+//echo $arr[0]. ' ' .$arr[1];
+
+//echo implode('-',$arr);
+
+for($i=0;$i<2;$i++){
+	if($arr[$i]=='World!'){
+		$arr[$i] = "Friend";
+	}
+}
+
+
+echo implode(' ',$arr);;
 
 ?>

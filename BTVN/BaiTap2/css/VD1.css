@@ -1,0 +1,53 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+body{
+	background-color:#f0f0f0;	
+}
+.clr{
+	clear:both;	
+}
+.container{
+	width:1340px;
+	padding:10px 20px;	
+}
+.container .san-pham{
+	float:left;
+	background-color:#FFF;
+	margin-right:10px;
+	width:380px;
+	padding:20px;
+	margin:8px;
+	
+}
+.container .san-pham .thongtin-sp{
+	margin-bottom:10px;
+	
+}
+.container .san-pham .thongtin-sp .hinh-sp{
+	float:left;	
+	margin-right:5px;
+}
+.container .san-pham .thongtin-sp .mota-sp{
+	float:right;	
+}
+.container .san-pham .thongtin-sp .mota-sp p.span{
+	background-color:#999;
+	border-radius:8px;	
+	padding:5px 8px;
+	width:86px;
+	color:#FFF;
+}
+/*===== Tên SP ====*/
+.container .san-pham .ten-sp{
+	font-weight:bold;
+	margin-bottom:5px;	
+}
+/*=== Giá SP ========*/
+.container .san-pham .gia-sp{
+	font-weight:bold;
+	color:#F00;	
+}
+
