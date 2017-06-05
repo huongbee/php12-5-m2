@@ -61,6 +61,12 @@ li{
 $menu = array('Trang chủ','Giới thiệu','Sản phẩm','Liên hệ','Đăng kí', 'Đăng nhập','Thể thao');
 
 
+array_splice($menu,2,2,array('Home', 'dfghjk')); 
+
+
+print_r($menu);
+die;
+
 
 $mangsp = array(
 				array("TenSP"=>"IPhone 5","Hinh"=>"iphone5.jpg","Gia"=>3000000),
