@@ -61,6 +61,15 @@ li{
 $menu = array('Trang chủ','Giới thiệu','Sản phẩm','Liên hệ','Đăng kí', 'Đăng nhập','Thể thao');
 
 
+
+$mangsp = array(
+				array("TenSP"=>"IPhone 5","Hinh"=>"iphone5.jpg","Gia"=>3000000),
+				array("TenSP"=>"IPhone 6","Hinh"=>"iphone6.jpg","Gia"=>4000000),
+				array("TenSP"=>"IPhone 7","Hinh"=>"iphone7.jpg","Gia"=>5000000),
+				array("TenSP"=>"IPhone 8","Hinh"=>"iphone8.jpg","Gia"=>6000000),
+				array("TenSP"=>"IPhone 9","Hinh"=>"iphone9.jpg","Gia"=>7000000)
+			);
+
 ?>
 
 
@@ -87,34 +96,40 @@ $menu = array('Trang chủ','Giới thiệu','Sản phẩm','Liên hệ','Đăng
 
 
 <div class="container">
+
+	<?php
+	// foreach($mangsp as $sanpham){
+	// 	echo '<div class="sanpham">
+	// 			<div class="hinh">
+	// 				<img src="image/'.$sanpham['Hinh'].'">
+	// 			</div>
+	// 			<div class="ten">'.$sanpham['TenSP'].'</div>
+	// 			<div class="gia">'.$sanpham['Gia'].'</div>
+	// 		</div>';
+	// }
+
+
+
+
+	foreach($mangsp as $sanpham){
+	?>
+
 	<div class="sanpham">
 		<div class="hinh">
-			<img src="image/iphone5.jpg">
+			<img src="image/<?=$sanpham['Hinh']?>">
 		</div>
-		<div class="ten">Iphone 7</div>
-		<div class="gia">10.000.000</div>
+		<div class="ten"><?=$sanpham['TenSP']?></div>
+		<div class="gia"><?=number_format($sanpham['Gia'])?></div>
 	</div>
-	<div class="sanpham">
-		<div class="hinh">
-			<img src="image/iphone5.jpg">
-		</div>
-		<div class="ten">Iphone 7</div>
-		<div class="gia">10.000.000</div>
-	</div>
-	<div class="sanpham">
-		<div class="hinh">
-			<img src="image/iphone5.jpg">
-		</div>
-		<div class="ten">Iphone 7</div>
-		<div class="gia">10.000.000</div>
-	</div>
-	<div class="sanpham">
-		<div class="hinh">
-			<img src="image/iphone5.jpg">
-		</div>
-		<div class="ten">Iphone 7</div>
-		<div class="gia">10.000.000</div>
-	</div>
+
+	<?php
+	}
+
+	?>
+
+	
+	
+
 </div>
 
 
