@@ -106,4 +106,40 @@ print_r(Getdate());
 
 $date = '2017/6/3 5:5:5';
 echo date('d/m/Y h:i:s', strtotime($date));
+
+echo '<br>';echo '<br>';echo '<br>';echo '<br>';
+
+function get_Date($day, $month,$year){
+	$d = cal_to_jd(CAL_GREGORIAN, $month, $day, $year);
+	$d = jddayofweek($d,0);
+	switch ($d) {
+		case 6:
+			$thu = 'Thứ bảy';
+			break;
+		case 5:
+			$thu = 'Thứ sáu';
+			break;
+		case 4:
+			$thu = 'Thứ năm';
+			break;
+		case 3:
+			$thu = 'Thứ tư';
+			break;
+		case 2:
+			$thu = 'Thứ ba';
+			break;
+		case 1:
+			$thu = 'Thứ hai';
+			break;
+		case 0:
+			$thu = 'chủ nhật';
+			break;
+	}
+	return $thu;
+
+}
+echo get_Date(20,06,2017);
+
+
+
 ?>

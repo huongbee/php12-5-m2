@@ -1,0 +1,67 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+	}
+.content{
+	width:600px;
+	margin:20px auto;
+	padding:10px;
+	border:1px solid #999;
+	background-color:#E5E5E5;
+	height:250px;
+	}
+.content h1{
+	padding-top:10px;
+	text-align:center;
+	color:#F00;
+	}
+.content div.row{
+	margin-top:10px;
+	padding-bottom:5px;
+	height:40px;
+	}
+.error{
+	margin: 5px;
+	font-size: 12px;
+	font-style: italic;
+	color: red;
+	margin-left:265px;
+	}
+.content div.row span{
+	display:inline-block;
+	width:170px;
+	text-align:right;
+	margin-right:6px;
+	}
+.content div.row input{
+	padding:3px 5px 3px 5px;
+	width:260px;
+	}
+.content div.row input[type=submit]{
+	padding:3px 8px;
+	background-color:#F60;
+	color:#FFF;
+	margin-left:250px;
+	font-size:16px;
+	font-weight:bold;
+	width:120px;
+	display:inline-block;
+	}
+
+.result{
+	width:600px;
+	margin:-10px auto;
+	padding:10px;
+}
+h2{
+	margin:15px auto;
+	width:600px;	
+}
+
+
+
+
+
+.
+
